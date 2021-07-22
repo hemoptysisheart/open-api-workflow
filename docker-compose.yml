@@ -3,6 +3,7 @@ services:
   api-preview:
     build:
       context: .
+      dockerfile: api-preview.Dockerfile
     entrypoint: '/watch.sh'
     command: '/api/api.yaml'
     ports:
